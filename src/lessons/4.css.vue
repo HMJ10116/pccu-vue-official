@@ -35,25 +35,25 @@
     <p>在調整css之後, 改為均勻分布</p>
     <myCard>
       <div class="d-flex justify-content-between">
-        <span class="border text-primary">垂直排列</span>
-        <span class="border text-primary">垂直排列</span>
-        <span class="border text-primary">垂直排列</span>
+        <span class="border text-primary">均分空間</span>
+        <span class="border text-primary">均分空間</span>
+        <span class="border text-primary">均分空間</span>
       </div>
     </myCard>
     <p>在調整css之後, 改為置中</p>
     <myCard>
       <div class="d-flex justify-content-center">
-        <span class="border text-primary">垂直排列</span>
-        <span class="border text-primary">垂直排列</span>
-        <span class="border text-primary">垂直排列</span>
+        <span class="border text-primary">靠中</span>
+        <span class="border text-primary">靠中</span>
+        <span class="border text-primary">靠中</span>
       </div>
     </myCard>
     <p>在調整css之後, 改為置末</p>
     <myCard>
       <div class="d-flex justify-content-end">
-        <span class="border text-primary">垂直排列</span>
-        <span class="border text-primary">垂直排列</span>
-        <span class="border text-primary">垂直排列</span>
+        <span class="border text-primary">靠尾</span>
+        <span class="border text-primary">靠尾</span>
+        <span class="border text-primary">靠尾</span>
       </div>
     </myCard>
     <p>還有align-self: center可以使標籤自我置中, 但比較進階可以之後再來研究</p>
