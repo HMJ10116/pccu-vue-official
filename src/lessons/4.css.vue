@@ -138,7 +138,26 @@
     </div>
     <h2>作業</h2>
     <p>承前一題目，善用CSS屬性將你的房間與主要家具用網頁元素來呈現，表現房間的格局</p>
-    <p>禁止使用Bootstrap</p>
+    <p>對於初學入門的學生，只要能以Bootstrap表示家具的相對位置即可</p>
+    <p>對與有心往前端發展的學生，請挑戰自己，不使用Bootstrap來完成這次作業，並力求比例上的近似、與RWD的設計</p>
+    <div class="css__demo">
+      <h3 class="demo__header">範例</h3>
+      <div class="demo__room">
+        <span class="room__window">整面窗戶</span>
+        <span class="room__tank">水草缸</span>
+        <span class="room__table">桌子</span>
+        <span class="room__closet">五斗米櫃</span>
+        <div class="room__bed">
+          床
+          <div class="bed__pillowGroup">
+            <span class="bed__pillow">枕頭</span>
+            <span class="bed__pillow">枕頭</span>
+          </div>
+        </div>
+        <span class="room__shelve">書櫃</span>
+        <span class="entrance__door">門</span>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -163,5 +182,108 @@ export default {
 }
 .css__border {
   border: 2px solid darkseagreen;
+}
+
+.css__demo {
+  width: 100%;
+  .demo__room {
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    width: calc(100vw - 30px);
+    height: calc(70vw);
+    text-align: center;
+    .room__window {
+      min-width: 100%;
+      height: 8%;
+      border: 1px solid black;
+      display: block;
+    }
+    .room__tank {
+      position: absolute;
+      width: 10%;
+      height: 20%;
+      border: 1px solid black;
+      background-color: lightgreen;
+      color: white;
+      left: 0;
+    }
+    .room__closet {
+      position: absolute;
+      width: 18%;
+      height: 70%;
+      left: 0;
+      bottom: 0;
+      border: 1px solid black;
+    }
+    .room__table {
+      position: absolute;
+      border: 1px solid black;
+      width: 18%;
+      height: 40%;
+      right: 0;
+    }
+    .room__bed {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-60%);
+      border: 1px solid black;
+      width: 40%;
+      height: 60%;
+      .bed__pillowGroup {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .bed__pillow {
+          border: 1px solid black;
+          width: 30%;
+          display: block;
+        }
+      }
+    }
+    .room__shelve {
+      position: absolute;
+      border: 1px solid black;
+      right: 0;
+      top: 48%;
+      width: 24%;
+      height: 14%;
+    }
+    .entrance__door {
+      position: absolute;
+      border: 1px solid black;
+      right: 0;
+      bottom: 0;
+      height: 8%;
+      width: 25%;
+    }
+  }
+}
+@media (min-width: 576px) {
+  .css__demo {
+    .demo__room {
+      max-width: 540px;
+      max-height: 378px;
+    }
+  }
+}
+@media (min-width: 720px) {
+  .css__demo {
+    .demo__room {
+      max-width: 720px;
+      max-height: 500px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .css__demo {
+    .demo__room {
+      max-width: 960px;
+      max-height: 700px;
+    }
+  }
 }
 </style>

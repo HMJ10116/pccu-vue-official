@@ -1,0 +1,12 @@
+{
+  "files.autoSave": "onWindowChange",
+  "window.zoomLevel": 1,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "editor.tabSize": 2,
+}
