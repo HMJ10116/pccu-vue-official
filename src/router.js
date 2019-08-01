@@ -33,6 +33,11 @@ export default new Router({
                     path: 'css',
                     name: 'css',
                     component: () => import('@/lessons/4.css.vue'),
+                },
+                {
+                    path: 'myWork',
+                    name: 'myWork',
+                    component: ()=> import('@/lessons/myWork.vue')
                 }
             ]
         },

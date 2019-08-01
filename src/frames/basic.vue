@@ -26,6 +26,10 @@ export default {
       {
         name: 'css',
         text: 'CSS'
+      },
+      {
+        name: 'myWork',
+        text: 'myWork'
       }
     ]
   }),
